@@ -12,9 +12,13 @@
 		9CF8D1B32253C403008F88CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1B12253C403008F88CD /* Main.storyboard */; };
 		9CF8D1B52253C404008F88CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1B42253C404008F88CD /* Assets.xcassets */; };
 		9CF8D1B82253C404008F88CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1B62253C404008F88CD /* LaunchScreen.storyboard */; };
+		9CF8D1C02253CE41008F88CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1BF2253CE41008F88CD /* GoogleService-Info.plist */; };
+		F761968A4ED67A61A51E305C /* Pods_Cookether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CAC9EA960A0A5C5641F9524 /* Pods-Cookether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.release.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.release.xcconfig"; sourceTree = "<group>"; };
+		3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cookether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8D1AA2253C403008F88CD /* Cookether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8D1AD2253C403008F88CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF8D1AF2253C403008F88CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		9CF8D1B42253C404008F88CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF8D1B72253C404008F88CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CF8D1B92253C404008F88CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF8D1BF2253CE41008F88CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.debug.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F761968A4ED67A61A51E305C /* Pods_Cookether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		513CD78A09A3500DD9EB9E27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */,
+				3CAC9EA960A0A5C5641F9524 /* Pods-Cookether.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9CF8D1A12253C403008F88CD = {
 			isa = PBXGroup;
 			children = (
 				9CF8D1AC2253C403008F88CD /* Cookether */,
 				9CF8D1AB2253C403008F88CD /* Products */,
+				513CD78A09A3500DD9EB9E27 /* Pods */,
+				F1C0D0628F60749A79C2A331 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,17 @@
 				9CF8D1B42253C404008F88CD /* Assets.xcassets */,
 				9CF8D1B62253C404008F88CD /* LaunchScreen.storyboard */,
 				9CF8D1B92253C404008F88CD /* Info.plist */,
+				9CF8D1BF2253CE41008F88CD /* GoogleService-Info.plist */,
 			);
 			path = Cookether;
+			sourceTree = "<group>";
+		};
+		F1C0D0628F60749A79C2A331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CF8D1BC2253C404008F88CD /* Build configuration list for PBXNativeTarget "Cookether" */;
 			buildPhases = (
+				9C83AFC9FA61C51777531E68 /* [CP] Check Pods Manifest.lock */,
 				9CF8D1A62253C403008F88CD /* Sources */,
 				9CF8D1A72253C403008F88CD /* Frameworks */,
 				9CF8D1A82253C403008F88CD /* Resources */,
+				4CCC580664852D7B5A2BE833 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF8D1B82253C404008F88CD /* LaunchScreen.storyboard in Resources */,
+				9CF8D1C02253CE41008F88CD /* GoogleService-Info.plist in Resources */,
 				9CF8D1B52253C404008F88CD /* Assets.xcassets in Resources */,
 				9CF8D1B32253C403008F88CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CCC580664852D7B5A2BE833 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C83AFC9FA61C51777531E68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cookether-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CF8D1A62253C403008F88CD /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		9CF8D1BD2253C404008F88CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		9CF8D1BE2253C404008F88CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAC9EA960A0A5C5641F9524 /* Pods-Cookether.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
