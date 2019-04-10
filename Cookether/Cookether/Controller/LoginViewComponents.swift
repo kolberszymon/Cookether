@@ -63,8 +63,6 @@ class LoginButton: UIView {
        
         guard let fbImage = UIImage(named: "fbIcon") else {return UIImageView()}
         let fbImageView = UIImageView(image: fbImage)
-        fbImageView.clipsToBounds = true
-        fbImageView.contentMode = .center
         fbImageView.backgroundColor = .clear
         fbImageView.translatesAutoresizingMaskIntoConstraints = false
         return fbImageView
@@ -138,10 +136,10 @@ class LoginButton: UIView {
         loginLabeL.topAnchor.constraint(equalTo: topAnchor).isActive = true
         loginLabeL.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
-        fbImage.leadingAnchor.constraint(equalTo: trailingAnchor,constant: -60).isActive = true
-        fbImage.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        fbImage.topAnchor.constraint(equalTo: topAnchor,constant: 15).isActive = true
-        fbImage.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        fbImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
+        fbImage.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        fbImage.heightAnchor.constraint(equalTo: fbImage.widthAnchor).isActive = true
+        fbImage.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 6).isActive = true
 //
 //        fbImage.centerYAnchor.constraint(equalTo: imageContainer.centerYAnchor).isActive = true
 //        fbImage.centerXAnchor.constraint(equalTo: imageContainer.centerXAnchor).isActive = true
@@ -150,3 +148,21 @@ class LoginButton: UIView {
     
     
 }
+
+let logoImageView: UIImageView = {
+   
+    guard let logoImg = UIImage(named: "logo") else { fatalError() }
+    let logoImgView = UIImageView(image: logoImg)
+    logoImgView.translatesAutoresizingMaskIntoConstraints = false
+    return logoImgView
+}()
+
+let logoImageLabel: UIImageView = {
+    
+    guard let labelImg = UIImage(named: "Cookgether") else { fatalError() }
+    let labelImgView = UIImageView(image: labelImg)
+    labelImgView.translatesAutoresizingMaskIntoConstraints = false
+    return labelImgView
+    
+}()
+

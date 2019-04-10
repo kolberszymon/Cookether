@@ -10,10 +10,9 @@
 		9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AD2253C403008F88CD /* AppDelegate.swift */; };
 		9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AF2253C403008F88CD /* LoginViewController.swift */; };
 		9CF8D1C02253CE41008F88CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1BF2253CE41008F88CD /* GoogleService-Info.plist */; };
-		9CF8D1C52253E899008F88CD /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1C42253E899008F88CD /* LoginButtonView.swift */; };
+		9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */; };
 		9CF8D1C82253F719008F88CD /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1C72253F712008F88CD /* Montserrat-Medium.ttf */; };
 		9CF8D1CE22540BE5008F88CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1CD22540BE5008F88CD /* Assets.xcassets */; };
-		9CF8D1D022564A1E008F88CD /* LoginLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1CF22564A1E008F88CD /* LoginLogoView.swift */; };
 		F761968A4ED67A61A51E305C /* Pods_Cookether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +24,9 @@
 		9CF8D1AF2253C403008F88CD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9CF8D1B92253C404008F88CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8D1BF2253CE41008F88CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9CF8D1C42253E899008F88CD /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
 		9CF8D1C72253F712008F88CD /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../../../../Downloads/Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		9CF8D1CD22540BE5008F88CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Library/Autosave Information/fbMessenger/fbMessenger/Assets.xcassets"; sourceTree = "<group>"; };
-		9CF8D1CF22564A1E008F88CD /* LoginLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogoView.swift; sourceTree = "<group>"; };
 		DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.debug.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +103,7 @@
 		9CF8D1C32253E78D008F88CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9CF8D1C42253E899008F88CD /* LoginButtonView.swift */,
-				9CF8D1CF22564A1E008F88CD /* LoginLogoView.swift */,
+				9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,9 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */,
-				9CF8D1C52253E899008F88CD /* LoginButtonView.swift in Sources */,
+				9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */,
 				9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */,
-				9CF8D1D022564A1E008F88CD /* LoginLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

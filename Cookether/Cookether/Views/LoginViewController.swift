@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
         
         view.backgroundColor = .white
         view.addSubview(loginButton)
+        view.addSubview(logoImageView)
+        view.addSubview(logoImageLabel)
         setUpConstraints()
         
         
@@ -31,6 +33,16 @@ class LoginViewController: UIViewController {
         loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -60).isActive = true
         loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor,constant: 150).isActive = true
         loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        logoImageView.widthAnchor.constraint(equalToConstant: 140).isActive = true
+        logoImageView.heightAnchor.constraint(equalTo: logoImageView.widthAnchor, multiplier: 1.60).isActive = true
+        logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 70).isActive = true
+        
+        logoImageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        logoImageLabel.centerYAnchor.constraint(equalTo: logoImageView.centerYAnchor).isActive = true
+        logoImageLabel.widthAnchor.constraint(equalToConstant: 254).isActive = true
+        logoImageLabel.heightAnchor.constraint(equalTo: logoImageLabel.widthAnchor, multiplier: 0.39).isActive = true
         
     }
     
