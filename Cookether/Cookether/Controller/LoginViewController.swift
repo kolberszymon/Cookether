@@ -10,9 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    
-    let loginButton = LoginButton(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-    
+    var loginButton = LoginButton(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +23,8 @@ class LoginViewController: UIViewController {
         
         
     }
-
     
+   
     func setUpConstraints() {
         
         loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 60).isActive = true

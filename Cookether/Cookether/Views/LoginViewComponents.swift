@@ -16,11 +16,11 @@ import Firebase
 
 let nicePink: UIColor = UIColor(red: 209/255, green: 71/255, blue: 107/255, alpha: 1)
 
-class LoginButton: UIView {
-    
+class LoginButton: UIView{
+        
     let loginButton: UIButton = {
         guard let customFont = UIFont(name: "Montserrat-Medium", size: UIFont.labelFontSize) else {
-            fatalError("Font error")
+            fatalError("font error")
         }
         let btn = UIButton(type: .system)
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -96,6 +96,8 @@ class LoginButton: UIView {
                 print(err)
                 return
             }
+            
+            AppDelegate.shared.rootViewController.showHomeScreen()
             
             print("Successfully signed into firebase :).")
             
