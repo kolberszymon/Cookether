@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class AddEventViewController: UIViewController, AddEventDelegate {
     
@@ -22,6 +23,9 @@ class AddEventViewController: UIViewController, AddEventDelegate {
     let pickLocationContainer = PickLocationContainer()
     let doneButton = DoneButton()
     
+    //Firebase reference
+    
+    //let rootRef = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,7 @@ class AddEventViewController: UIViewController, AddEventDelegate {
         view.addSubview(doneButton)
         view.addSubview(pickLocationContainer)
         
+        
         doneButton.addEventDelegate = self
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
@@ -51,6 +56,7 @@ class AddEventViewController: UIViewController, AddEventDelegate {
         
         homeButton.addTarget(self, action: #selector(AddEventViewController.showHomeScreen), for: .touchUpInside)
         setUpConstraints()
+        //databaseSetUp()
                 
     }
     
@@ -60,6 +66,12 @@ class AddEventViewController: UIViewController, AddEventDelegate {
         navigationController?.setNavigationBarHidden(true, animated: false)
         
     }
+    
+//    private func databaseSetUp() {
+//        let userRef = rootRef.child("user")
+//        let uidRef = userRef.child("uid")
+//        let eventsRef = userRef.child("events")
+//    }
     
     @objc private func showHomeScreen() {
         AppDelegate.shared.rootViewController.showHomeScreen()
@@ -71,7 +83,8 @@ class AddEventViewController: UIViewController, AddEventDelegate {
     
     func addEvent() {
         if nameTextField.validate() && dateInputTextField.validateIfDateIsChose() {
-            print("Okej")
+            //Save to database
+            
         } else {
             print("Not ok")
         }

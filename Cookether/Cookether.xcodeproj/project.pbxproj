@@ -13,6 +13,7 @@
 		9C36C79D2292B006000C8FF9 /* AddEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C79C2292B006000C8FF9 /* AddEventDelegate.swift */; };
 		9C36C79F2292BF73000C8FF9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C79E2292BF73000C8FF9 /* RootViewController.swift */; };
 		9C36C7A22292C485000C8FF9 /* WelcomeTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C7A12292C485000C8FF9 /* WelcomeTag.swift */; };
+		9C3E45E2229C3ABF00D4FE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */; };
 		9CBC82C22293EB9D00615D6F /* AddEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC82C12293EB9D00615D6F /* AddEventButton.swift */; };
 		9CCF056422943D29009AF3D7 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF056322943D29009AF3D7 /* AddEventViewController.swift */; };
 		9CCF05672295EE88009AF3D7 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF05662295EE88009AF3D7 /* NameTextField.swift */; };
@@ -26,7 +27,6 @@
 		9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AD2253C403008F88CD /* AppDelegate.swift */; };
 		9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AF2253C403008F88CD /* LoginViewController.swift */; };
 		9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */; };
-		9CF8D1CE22540BE5008F88CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8D1CD22540BE5008F88CD /* Assets.xcassets */; };
 		F761968A4ED67A61A51E305C /* Pods_Cookether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,7 @@
 		9C36C79C2292B006000C8FF9 /* AddEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventDelegate.swift; sourceTree = "<group>"; };
 		9C36C79E2292BF73000C8FF9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9C36C7A12292C485000C8FF9 /* WelcomeTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTag.swift; sourceTree = "<group>"; };
+		9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBC82C12293EB9D00615D6F /* AddEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventButton.swift; sourceTree = "<group>"; };
 		9CCF056322943D29009AF3D7 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		9CCF05662295EE88009AF3D7 /* NameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		9CF8D1AF2253C403008F88CD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9CF8D1B92253C404008F88CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
-		9CF8D1CD22540BE5008F88CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Library/Autosave Information/fbMessenger/fbMessenger/Assets.xcassets"; sourceTree = "<group>"; };
 		DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.debug.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,8 +128,8 @@
 				9CF8D1C32253E78D008F88CD /* Controller */,
 				9CF8D1C22253E51A008F88CD /* Models */,
 				9CF8D1C12253E50E008F88CD /* Views */,
-				9CF8D1CD22540BE5008F88CD /* Assets.xcassets */,
 				9CF8D1AD2253C403008F88CD /* AppDelegate.swift */,
+				9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */,
 				9C2B3A672292ABFF000C6AF2 /* GoogleService-Info.plist */,
 				9CF8D1B92253C404008F88CD /* Info.plist */,
 				9CF8D1C62253F6E4008F88CD /* Fonts */,
@@ -249,8 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF8D1CE22540BE5008F88CD /* Assets.xcassets in Resources */,
 				9C2B3A682292ABFF000C6AF2 /* GoogleService-Info.plist in Resources */,
+				9C3E45E2229C3ABF00D4FE4D /* Assets.xcassets in Resources */,
 				9C36C7992292AE07000C8FF9 /* Montserrat-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
