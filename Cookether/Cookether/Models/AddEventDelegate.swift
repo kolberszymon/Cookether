@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol ChangeViewDelegate {
-    func presentView(view: UIViewController)
+protocol AddEventDelegate {
+    func addEvent()
 }

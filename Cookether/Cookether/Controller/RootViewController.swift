@@ -10,6 +10,9 @@ import UIKit
 
 class RootViewController: UIViewController {
     
+    let homeScreen = HomePageViewController()
+    let addEventScreen = AddEventViewController()
+    
     private var current: UIViewController
     
     init() {
@@ -40,7 +43,7 @@ class RootViewController: UIViewController {
     
     func showHomeScreen() {
         
-        let homeVC = HomePageViewController()
+        let homeVC = homeScreen
         let new = UINavigationController(rootViewController: homeVC)
         
         animateFadeTransition(to: new)
@@ -48,9 +51,12 @@ class RootViewController: UIViewController {
     
     func showAddEventScreen() {
         
-        //Add event screen
-        print("Showing add event :)")
+        let addEventVC = addEventScreen
+        addEventScreen.dateLabel.text = ""
+        addEventScreen.nameTextField.text = ""
+        let new = UINavigationController(rootViewController: addEventVC)
         
+        animateFadeTransition(to: new)
     }
     
     func showScreenStuff(newVC: UIViewController) {

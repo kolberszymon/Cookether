@@ -6,29 +6,22 @@
 //  Copyright © 2019 Szymon Kolber. All rights reserved.
 //
 
+//TODO:
+//Add log out button with updating user data to logout
+
 import UIKit
 import FirebaseAuth
 import Firebase
+import CoreLocation
 
 class HomePageViewController: UIViewController {
     
-    let welcomeLabel: UILabel = {
-       
-        guard let customFont = UIFont(name: "Montserrat-Medium", size: UIFont.labelFontSize) else {
-            fatalError("font error") }
-        
-        let label = UILabel()
-        label.text = "Let's get started!"
-        label.font = UIFontMetrics.default.scaledFont(for: customFont)
-        label.textAlignment = .center
-        label.font = label.font.withSize(20)
-        label.textColor = nicePink
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-        
-    }()
+    //MARK: UIComponents Initialization
     
+    let welcomeLabel = WelcomeLabel()
     let addEventButton = AddEventButton()
+    
+    //MARK: Initialization
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +40,14 @@ class HomePageViewController: UIViewController {
         setUp()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    //MARK: Setting up constraints
+    
     func setUp() {
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         welcomeLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -60,4 +61,7 @@ class HomePageViewController: UIViewController {
         addEventButton.heightAnchor.constraint(equalTo: addEventButton.widthAnchor).isActive = true
     }
     
+    
+    
 }
+

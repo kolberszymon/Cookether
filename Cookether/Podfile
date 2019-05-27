@@ -8,6 +8,7 @@ target 'Cookether' do
   # Pods for Cookether
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
  
   pod 'FacebookCore'
   pod 'FacebookLogin' 

@@ -24,7 +24,6 @@ class LoginViewController: UIViewController {
         
     }
     
-   
     func setUpConstraints() {
         
         loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 60).isActive = true
