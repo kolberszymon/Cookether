@@ -97,6 +97,8 @@ class LoginButton: UIView{
                 return
             }
             
+            
+            
             AppDelegate.shared.rootViewController.showHomeScreen()
             
             print("Successfully signed into firebase :).")

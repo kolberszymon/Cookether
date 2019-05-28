@@ -55,7 +55,7 @@ class RootViewController: UIViewController {
         addEventScreen.dateLabel.text = ""
         addEventScreen.nameTextField.text = ""
         let new = UINavigationController(rootViewController: addEventVC)
-        
+
         animateFadeTransition(to: new)
     }
     

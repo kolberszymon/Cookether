@@ -11,8 +11,10 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 import Firebase
 import CoreLocation
+
 
 class HomePageViewController: UIViewController {
     
@@ -20,6 +22,8 @@ class HomePageViewController: UIViewController {
     
     let welcomeLabel = WelcomeLabel()
     let addEventButton = AddEventButton()
+    
+    var ref: DatabaseReference!
     
     //MARK: Initialization
     
@@ -29,6 +33,12 @@ class HomePageViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(welcomeLabel)
         view.addSubview(addEventButton)
+        
+        ref = Database.database().reference()
+        
+        let userUid = Auth.auth().currentUser!.uid
+        
+        ref.child("users").setValue(userUid)
         
         if let user = Auth.auth().currentUser {
             print(user.displayName!)

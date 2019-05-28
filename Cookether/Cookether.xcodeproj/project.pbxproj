@@ -14,6 +14,10 @@
 		9C36C79F2292BF73000C8FF9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C79E2292BF73000C8FF9 /* RootViewController.swift */; };
 		9C36C7A22292C485000C8FF9 /* WelcomeTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C7A12292C485000C8FF9 /* WelcomeTag.swift */; };
 		9C3E45E2229C3ABF00D4FE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */; };
+		9C3E45E5229C49BE00D4FE4D /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45E4229C49BE00D4FE4D /* Guest.swift */; };
+		9C3E45E7229C4A6E00D4FE4D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45E6229C4A6E00D4FE4D /* Place.swift */; };
+		9C3E45E9229C4A9600D4FE4D /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45E8229C4A9600D4FE4D /* Time.swift */; };
+		9C3E45EB229C4AE800D4FE4D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45EA229C4AE800D4FE4D /* Event.swift */; };
 		9CBC82C22293EB9D00615D6F /* AddEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC82C12293EB9D00615D6F /* AddEventButton.swift */; };
 		9CCF056422943D29009AF3D7 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF056322943D29009AF3D7 /* AddEventViewController.swift */; };
 		9CCF05672295EE88009AF3D7 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF05662295EE88009AF3D7 /* NameTextField.swift */; };
@@ -40,6 +44,10 @@
 		9C36C79E2292BF73000C8FF9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9C36C7A12292C485000C8FF9 /* WelcomeTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTag.swift; sourceTree = "<group>"; };
 		9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C3E45E4229C49BE00D4FE4D /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		9C3E45E6229C4A6E00D4FE4D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		9C3E45E8229C4A9600D4FE4D /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		9C3E45EA229C4AE800D4FE4D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9CBC82C12293EB9D00615D6F /* AddEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventButton.swift; sourceTree = "<group>"; };
 		9CCF056322943D29009AF3D7 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		9CCF05662295EE88009AF3D7 /* NameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
@@ -86,6 +94,17 @@
 				9CBC82C12293EB9D00615D6F /* AddEventButton.swift */,
 			);
 			path = "HomeViewController Components";
+			sourceTree = "<group>";
+		};
+		9C3E45E3229C498800D4FE4D /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				9C3E45E4229C49BE00D4FE4D /* Guest.swift */,
+				9C3E45E6229C4A6E00D4FE4D /* Place.swift */,
+				9C3E45E8229C4A9600D4FE4D /* Time.swift */,
+				9C3E45EA229C4AE800D4FE4D /* Event.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		9CCF056522943E03009AF3D7 /* AddEventViewController Components */ = {
@@ -150,6 +169,7 @@
 		9CF8D1C22253E51A008F88CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C3E45E3229C498800D4FE4D /* Event */,
 				9C36C79C2292B006000C8FF9 /* AddEventDelegate.swift */,
 			);
 			path = Models;
@@ -305,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C36C79D2292B006000C8FF9 /* AddEventDelegate.swift in Sources */,
+				9C3E45E7229C4A6E00D4FE4D /* Place.swift in Sources */,
 				9C36C7A22292C485000C8FF9 /* WelcomeTag.swift in Sources */,
 				9C36C79B2292AF38000C8FF9 /* HomePageViewController.swift in Sources */,
 				9CCF056D2295F4C1009AF3D7 /* AddGuestButton.swift in Sources */,
@@ -314,12 +335,15 @@
 				9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */,
 				9CCF0575229C137C009AF3D7 /* DoneButton.swift in Sources */,
 				9CCF056F2295F840009AF3D7 /* DateInputTextField.swift in Sources */,
+				9C3E45E9229C4A9600D4FE4D /* Time.swift in Sources */,
+				9C3E45E5229C49BE00D4FE4D /* Guest.swift in Sources */,
 				9CCF05692295F2A6009AF3D7 /* ThrowADinnerLabel.swift in Sources */,
 				9CBC82C22293EB9D00615D6F /* AddEventButton.swift in Sources */,
 				9CCF056422943D29009AF3D7 /* AddEventViewController.swift in Sources */,
 				9CCF05712297E3A8009AF3D7 /* PickLocationContainer.swift in Sources */,
 				9CCF05732298013B009AF3D7 /* PickLocation.swift in Sources */,
 				9CCF05672295EE88009AF3D7 /* NameTextField.swift in Sources */,
+				9C3E45EB229C4AE800D4FE4D /* Event.swift in Sources */,
 				9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

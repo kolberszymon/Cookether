@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import Firebase
 
 class AddEventViewController: UIViewController, AddEventDelegate {
     
@@ -25,7 +26,7 @@ class AddEventViewController: UIViewController, AddEventDelegate {
     
     //Firebase reference
     
-    //let rootRef = Database.database().reference()
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,7 @@ class AddEventViewController: UIViewController, AddEventDelegate {
         view.addSubview(doneButton)
         view.addSubview(pickLocationContainer)
         
+        ref = Database.database().reference()
         
         doneButton.addEventDelegate = self
         
@@ -56,7 +58,7 @@ class AddEventViewController: UIViewController, AddEventDelegate {
         
         homeButton.addTarget(self, action: #selector(AddEventViewController.showHomeScreen), for: .touchUpInside)
         setUpConstraints()
-        //databaseSetUp()
+        
                 
     }
     
@@ -67,11 +69,28 @@ class AddEventViewController: UIViewController, AddEventDelegate {
         
     }
     
-//    private func databaseSetUp() {
-//        let userRef = rootRef.child("user")
-//        let uidRef = userRef.child("uid")
-//        let eventsRef = userRef.child("events")
-//    }
+    private func databaseSetUp() {
+        
+        guard let userId = Auth.auth().currentUser?.uid else { return }
+        
+        let eventId = UUID()
+        let place = ["longitude": 30, "latitude": 25]
+        let time = "dzis"
+        let guests = ["natalia", "ania", "tomek", "benek"]
+        let name = nameTextField.text
+        
+        ref.child("events").child(eventId.uuidString).setValue(
+            [
+                "name": name!,
+                "owner": userId,
+                "time": time,
+                "guests": guests,
+                "place": place
+            ]
+        )
+       
+        
+    }
     
     @objc private func showHomeScreen() {
         AppDelegate.shared.rootViewController.showHomeScreen()
@@ -84,7 +103,8 @@ class AddEventViewController: UIViewController, AddEventDelegate {
     func addEvent() {
         if nameTextField.validate() && dateInputTextField.validateIfDateIsChose() {
             //Save to database
-            
+            databaseSetUp()
+
         } else {
             print("Not ok")
         }
@@ -146,3 +166,23 @@ let homeButton: UIButton = {
     
     return btn
 }()
+
+extension AddEventViewController {
+    
+    struct Guest: Codable {
+        let uid: String?
+    }
+
+    struct Place: Codable {
+        let longitude: String?
+        let latitude: String?
+    }
+    
+    struct Event: Codable {
+        let name: String?
+        let guests: [Guest]?
+        let date: String?
+        let place: Place?
+        
+    }
+}
