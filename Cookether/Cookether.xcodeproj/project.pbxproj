@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C2B3A682292ABFF000C6AF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C2B3A672292ABFF000C6AF2 /* GoogleService-Info.plist */; };
 		9C36C7992292AE07000C8FF9 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C2B3A662292ABF2000C6AF2 /* Montserrat-Medium.ttf */; };
 		9C36C79B2292AF38000C8FF9 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C79A2292AF38000C8FF9 /* HomePageViewController.swift */; };
 		9C36C79D2292B006000C8FF9 /* AddEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C79C2292B006000C8FF9 /* AddEventDelegate.swift */; };
@@ -31,6 +30,7 @@
 		9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AD2253C403008F88CD /* AppDelegate.swift */; };
 		9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AF2253C403008F88CD /* LoginViewController.swift */; };
 		9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */; };
+		E1939E65229D48E600D02E8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1939E64229D48E600D02E8A /* GoogleService-Info.plist */; };
 		F761968A4ED67A61A51E305C /* Pods_Cookether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,6 @@
 		3CAC9EA960A0A5C5641F9524 /* Pods-Cookether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.release.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.release.xcconfig"; sourceTree = "<group>"; };
 		3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cookether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2B3A662292ABF2000C6AF2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		9C2B3A672292ABFF000C6AF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C36C79A2292AF38000C8FF9 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		9C36C79C2292B006000C8FF9 /* AddEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventDelegate.swift; sourceTree = "<group>"; };
 		9C36C79E2292BF73000C8FF9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		9CF8D1B92253C404008F88CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
 		DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.debug.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.debug.xcconfig"; sourceTree = "<group>"; };
+		E1939E64229D48E600D02E8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +149,8 @@
 				9CF8D1C12253E50E008F88CD /* Views */,
 				9CF8D1AD2253C403008F88CD /* AppDelegate.swift */,
 				9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */,
-				9C2B3A672292ABFF000C6AF2 /* GoogleService-Info.plist */,
 				9CF8D1B92253C404008F88CD /* Info.plist */,
+				E1939E64229D48E600D02E8A /* GoogleService-Info.plist */,
 				9CF8D1C62253F6E4008F88CD /* Fonts */,
 			);
 			path = Cookether;
@@ -269,9 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C2B3A682292ABFF000C6AF2 /* GoogleService-Info.plist in Resources */,
 				9C3E45E2229C3ABF00D4FE4D /* Assets.xcassets in Resources */,
 				9C36C7992292AE07000C8FF9 /* Montserrat-Medium.ttf in Resources */,
+				E1939E65229D48E600D02E8A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +284,32 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -480,7 +501,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DominikKolber.Cookether;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NataliaSkawinska.Cookether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,7 +521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DominikKolber.Cookether;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NataliaSkawinska.Cookether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
