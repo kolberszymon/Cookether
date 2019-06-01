@@ -31,6 +31,14 @@
 		9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AF2253C403008F88CD /* LoginViewController.swift */; };
 		9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */; };
 		E1939E65229D48E600D02E8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1939E64229D48E600D02E8A /* GoogleService-Info.plist */; };
+		E1939E67229D5BF600D02E8A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E66229D5BF600D02E8A /* EventViewController.swift */; };
+		E1939E6A229D5C5600D02E8A /* EventNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E69229D5C5600D02E8A /* EventNameLabel.swift */; };
+		E1939E6C229D5C8D00D02E8A /* DateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E6B229D5C8D00D02E8A /* DateLabel.swift */; };
+		E1939E6E229D5CB900D02E8A /* InvitedGuestsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E6D229D5CB900D02E8A /* InvitedGuestsButton.swift */; };
+		E1939E70229D5D0D00D02E8A /* PlaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E6F229D5D0D00D02E8A /* PlaceButton.swift */; };
+		E1939E72229D5D3400D02E8A /* PlaceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E71229D5D3400D02E8A /* PlaceLabel.swift */; };
+		E1939E74229D5D4E00D02E8A /* ShowLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E73229D5D4E00D02E8A /* ShowLocation.swift */; };
+		E1939E76229D5D7700D02E8A /* ShowLocationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E75229D5D7700D02E8A /* ShowLocationContainer.swift */; };
 		F761968A4ED67A61A51E305C /* Pods_Cookether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB947ACF11DD07BF3A73DB9 /* Pods_Cookether.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +72,14 @@
 		9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
 		DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.debug.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.debug.xcconfig"; sourceTree = "<group>"; };
 		E1939E64229D48E600D02E8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1939E66229D5BF600D02E8A /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		E1939E69229D5C5600D02E8A /* EventNameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNameLabel.swift; sourceTree = "<group>"; };
+		E1939E6B229D5C8D00D02E8A /* DateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabel.swift; sourceTree = "<group>"; };
+		E1939E6D229D5CB900D02E8A /* InvitedGuestsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedGuestsButton.swift; sourceTree = "<group>"; };
+		E1939E6F229D5D0D00D02E8A /* PlaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceButton.swift; sourceTree = "<group>"; };
+		E1939E71229D5D3400D02E8A /* PlaceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLabel.swift; sourceTree = "<group>"; };
+		E1939E73229D5D4E00D02E8A /* ShowLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocation.swift; sourceTree = "<group>"; };
+		E1939E75229D5D7700D02E8A /* ShowLocationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocationContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +175,7 @@
 		9CF8D1C12253E50E008F88CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E1939E68229D5C2B00D02E8A /* EventViewController Components */,
 				9CCF056522943E03009AF3D7 /* AddEventViewController Components */,
 				9C36C7A02292C46F000C8FF9 /* HomeViewController Components */,
 				9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */,
@@ -182,6 +199,7 @@
 				9C36C79A2292AF38000C8FF9 /* HomePageViewController.swift */,
 				9C36C79E2292BF73000C8FF9 /* RootViewController.swift */,
 				9CCF056322943D29009AF3D7 /* AddEventViewController.swift */,
+				E1939E66229D5BF600D02E8A /* EventViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +217,20 @@
 			children = (
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		E1939E68229D5C2B00D02E8A /* EventViewController Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1939E69229D5C5600D02E8A /* EventNameLabel.swift */,
+				E1939E6B229D5C8D00D02E8A /* DateLabel.swift */,
+				E1939E73229D5D4E00D02E8A /* ShowLocation.swift */,
+				E1939E6D229D5CB900D02E8A /* InvitedGuestsButton.swift */,
+				E1939E6F229D5D0D00D02E8A /* PlaceButton.swift */,
+				E1939E75229D5D7700D02E8A /* ShowLocationContainer.swift */,
+				E1939E71229D5D3400D02E8A /* PlaceLabel.swift */,
+			);
+			path = "EventViewController Components";
 			sourceTree = "<group>";
 		};
 		F1C0D0628F60749A79C2A331 /* Frameworks */ = {
@@ -345,19 +377,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1939E6C229D5C8D00D02E8A /* DateLabel.swift in Sources */,
 				9C36C79D2292B006000C8FF9 /* AddEventDelegate.swift in Sources */,
+				E1939E67229D5BF600D02E8A /* EventViewController.swift in Sources */,
+				E1939E6A229D5C5600D02E8A /* EventNameLabel.swift in Sources */,
 				9C3E45E7229C4A6E00D4FE4D /* Place.swift in Sources */,
 				9C36C7A22292C485000C8FF9 /* WelcomeTag.swift in Sources */,
 				9C36C79B2292AF38000C8FF9 /* HomePageViewController.swift in Sources */,
+				E1939E74229D5D4E00D02E8A /* ShowLocation.swift in Sources */,
 				9CCF056D2295F4C1009AF3D7 /* AddGuestButton.swift in Sources */,
 				9CCF056B2295F3F4009AF3D7 /* GuestsLabel.swift in Sources */,
 				9C36C79F2292BF73000C8FF9 /* RootViewController.swift in Sources */,
+				E1939E76229D5D7700D02E8A /* ShowLocationContainer.swift in Sources */,
 				9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */,
 				9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */,
+				E1939E6E229D5CB900D02E8A /* InvitedGuestsButton.swift in Sources */,
 				9CCF0575229C137C009AF3D7 /* DoneButton.swift in Sources */,
 				9CCF056F2295F840009AF3D7 /* DateInputTextField.swift in Sources */,
 				9C3E45E9229C4A9600D4FE4D /* Time.swift in Sources */,
 				9C3E45E5229C49BE00D4FE4D /* Guest.swift in Sources */,
+				E1939E72229D5D3400D02E8A /* PlaceLabel.swift in Sources */,
 				9CCF05692295F2A6009AF3D7 /* ThrowADinnerLabel.swift in Sources */,
 				9CBC82C22293EB9D00615D6F /* AddEventButton.swift in Sources */,
 				9CCF056422943D29009AF3D7 /* AddEventViewController.swift in Sources */,
@@ -366,6 +405,7 @@
 				9CCF05672295EE88009AF3D7 /* NameTextField.swift in Sources */,
 				9C3E45EB229C4AE800D4FE4D /* Event.swift in Sources */,
 				9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */,
+				E1939E70229D5D0D00D02E8A /* PlaceButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
