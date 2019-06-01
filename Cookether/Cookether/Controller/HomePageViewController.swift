@@ -37,12 +37,15 @@ class HomePageViewController: UIViewController {
         ref = Database.database().reference()
         
         let userUid = Auth.auth().currentUser!.uid
+        let userRef = ref.child("users").child(userUid)
         
-        ref.child("users").setValue(userUid)
         
         if let user = Auth.auth().currentUser {
             print(user.displayName!)
             welcomeLabel.text = "Hello \(user.displayName!)!"
+            let values = ["name": user.displayName!, "uid": userUid]
+            
+            userRef.updateChildValues(values)
         } else {
             print("no user")
         }

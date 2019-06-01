@@ -25,6 +25,8 @@ class AddGuestButton: UIButton {
     
     @objc private func addGuest() {
         //Showing new screen with tableview of possible users
+        AppDelegate.shared.rootViewController.showAddGuestsScreen()
+
     }
     
     private func setUpLayout() {

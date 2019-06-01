@@ -12,6 +12,7 @@ class RootViewController: UIViewController {
     
     let homeScreen = HomePageViewController()
     let addEventScreen = AddEventViewController()
+    let addGuestScreen = AddGuestsViewController()
     
     private var current: UIViewController
     
@@ -49,13 +50,18 @@ class RootViewController: UIViewController {
         animateFadeTransition(to: new)
     }
     
+    func showAddGuestsScreen() {
+        let new = UINavigationController(rootViewController: addGuestScreen)
+        animateFadeTransition(to: new)
+    }
+    
     func showAddEventScreen() {
         
         let addEventVC = addEventScreen
         addEventScreen.dateLabel.text = ""
         addEventScreen.nameTextField.text = ""
         let new = UINavigationController(rootViewController: addEventVC)
-
+        
         animateFadeTransition(to: new)
     }
     

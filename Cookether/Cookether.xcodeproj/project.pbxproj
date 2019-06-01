@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,11 +13,10 @@
 		9C36C79F2292BF73000C8FF9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C79E2292BF73000C8FF9 /* RootViewController.swift */; };
 		9C36C7A22292C485000C8FF9 /* WelcomeTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36C7A12292C485000C8FF9 /* WelcomeTag.swift */; };
 		9C3E45E2229C3ABF00D4FE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */; };
-		9C3E45E5229C49BE00D4FE4D /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45E4229C49BE00D4FE4D /* Guest.swift */; };
-		9C3E45E7229C4A6E00D4FE4D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45E6229C4A6E00D4FE4D /* Place.swift */; };
-		9C3E45E9229C4A9600D4FE4D /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45E8229C4A9600D4FE4D /* Time.swift */; };
-		9C3E45EB229C4AE800D4FE4D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E45EA229C4AE800D4FE4D /* Event.swift */; };
 		9CBC82C22293EB9D00615D6F /* AddEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC82C12293EB9D00615D6F /* AddEventButton.swift */; };
+		9CC237F722A2D626002F545F /* AddGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC237F622A2D626002F545F /* AddGuestViewController.swift */; };
+		9CC237F922A2D685002F545F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC237F822A2D685002F545F /* User.swift */; };
+		9CC237FB22A2D69D002F545F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CC237FA22A2D69D002F545F /* GoogleService-Info.plist */; };
 		9CCF056422943D29009AF3D7 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF056322943D29009AF3D7 /* AddEventViewController.swift */; };
 		9CCF05672295EE88009AF3D7 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF05662295EE88009AF3D7 /* NameTextField.swift */; };
 		9CCF05692295F2A6009AF3D7 /* ThrowADinnerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF05682295F2A6009AF3D7 /* ThrowADinnerLabel.swift */; };
@@ -30,7 +29,6 @@
 		9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AD2253C403008F88CD /* AppDelegate.swift */; };
 		9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1AF2253C403008F88CD /* LoginViewController.swift */; };
 		9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */; };
-		E1939E65229D48E600D02E8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1939E64229D48E600D02E8A /* GoogleService-Info.plist */; };
 		E1939E67229D5BF600D02E8A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E66229D5BF600D02E8A /* EventViewController.swift */; };
 		E1939E6A229D5C5600D02E8A /* EventNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E69229D5C5600D02E8A /* EventNameLabel.swift */; };
 		E1939E6C229D5C8D00D02E8A /* DateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1939E6B229D5C8D00D02E8A /* DateLabel.swift */; };
@@ -51,11 +49,10 @@
 		9C36C79E2292BF73000C8FF9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9C36C7A12292C485000C8FF9 /* WelcomeTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTag.swift; sourceTree = "<group>"; };
 		9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9C3E45E4229C49BE00D4FE4D /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
-		9C3E45E6229C4A6E00D4FE4D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		9C3E45E8229C4A9600D4FE4D /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		9C3E45EA229C4AE800D4FE4D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9CBC82C12293EB9D00615D6F /* AddEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventButton.swift; sourceTree = "<group>"; };
+		9CC237F622A2D626002F545F /* AddGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuestViewController.swift; sourceTree = "<group>"; };
+		9CC237F822A2D685002F545F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9CC237FA22A2D69D002F545F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9CCF056322943D29009AF3D7 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		9CCF05662295EE88009AF3D7 /* NameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
 		9CCF05682295F2A6009AF3D7 /* ThrowADinnerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowADinnerLabel.swift; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 		9CF8D1B92253C404008F88CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8D1C42253E899008F88CD /* LoginViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewComponents.swift; sourceTree = "<group>"; };
 		DB3F46C9812DEC39145CEB12 /* Pods-Cookether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookether.debug.xcconfig"; path = "Target Support Files/Pods-Cookether/Pods-Cookether.debug.xcconfig"; sourceTree = "<group>"; };
-		E1939E64229D48E600D02E8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1939E66229D5BF600D02E8A /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		E1939E69229D5C5600D02E8A /* EventNameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNameLabel.swift; sourceTree = "<group>"; };
 		E1939E6B229D5C8D00D02E8A /* DateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabel.swift; sourceTree = "<group>"; };
@@ -110,17 +106,6 @@
 				9CBC82C12293EB9D00615D6F /* AddEventButton.swift */,
 			);
 			path = "HomeViewController Components";
-			sourceTree = "<group>";
-		};
-		9C3E45E3229C498800D4FE4D /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				9C3E45E4229C49BE00D4FE4D /* Guest.swift */,
-				9C3E45E6229C4A6E00D4FE4D /* Place.swift */,
-				9C3E45E8229C4A9600D4FE4D /* Time.swift */,
-				9C3E45EA229C4AE800D4FE4D /* Event.swift */,
-			);
-			path = Event;
 			sourceTree = "<group>";
 		};
 		9CCF056522943E03009AF3D7 /* AddEventViewController Components */ = {
@@ -164,9 +149,9 @@
 				9CF8D1C22253E51A008F88CD /* Models */,
 				9CF8D1C12253E50E008F88CD /* Views */,
 				9CF8D1AD2253C403008F88CD /* AppDelegate.swift */,
+				9CC237FA22A2D69D002F545F /* GoogleService-Info.plist */,
 				9C3E45E1229C3ABF00D4FE4D /* Assets.xcassets */,
 				9CF8D1B92253C404008F88CD /* Info.plist */,
-				E1939E64229D48E600D02E8A /* GoogleService-Info.plist */,
 				9CF8D1C62253F6E4008F88CD /* Fonts */,
 			);
 			path = Cookether;
@@ -186,8 +171,8 @@
 		9CF8D1C22253E51A008F88CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9C3E45E3229C498800D4FE4D /* Event */,
 				9C36C79C2292B006000C8FF9 /* AddEventDelegate.swift */,
+				9CC237F822A2D685002F545F /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +184,7 @@
 				9C36C79A2292AF38000C8FF9 /* HomePageViewController.swift */,
 				9C36C79E2292BF73000C8FF9 /* RootViewController.swift */,
 				9CCF056322943D29009AF3D7 /* AddEventViewController.swift */,
+				9CC237F622A2D626002F545F /* AddGuestViewController.swift */,
 				E1939E66229D5BF600D02E8A /* EventViewController.swift */,
 			);
 			path = Controller;
@@ -303,7 +289,7 @@
 			files = (
 				9C3E45E2229C3ABF00D4FE4D /* Assets.xcassets in Resources */,
 				9C36C7992292AE07000C8FF9 /* Montserrat-Medium.ttf in Resources */,
-				E1939E65229D48E600D02E8A /* GoogleService-Info.plist in Resources */,
+				9CC237FB22A2D69D002F545F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,32 +302,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Cookether/Pods-Cookether-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -381,21 +346,20 @@
 				9C36C79D2292B006000C8FF9 /* AddEventDelegate.swift in Sources */,
 				E1939E67229D5BF600D02E8A /* EventViewController.swift in Sources */,
 				E1939E6A229D5C5600D02E8A /* EventNameLabel.swift in Sources */,
-				9C3E45E7229C4A6E00D4FE4D /* Place.swift in Sources */,
 				9C36C7A22292C485000C8FF9 /* WelcomeTag.swift in Sources */,
+				9CC237F922A2D685002F545F /* User.swift in Sources */,
 				9C36C79B2292AF38000C8FF9 /* HomePageViewController.swift in Sources */,
 				E1939E74229D5D4E00D02E8A /* ShowLocation.swift in Sources */,
 				9CCF056D2295F4C1009AF3D7 /* AddGuestButton.swift in Sources */,
 				9CCF056B2295F3F4009AF3D7 /* GuestsLabel.swift in Sources */,
 				9C36C79F2292BF73000C8FF9 /* RootViewController.swift in Sources */,
+				9CC237F722A2D626002F545F /* AddGuestViewController.swift in Sources */,
 				E1939E76229D5D7700D02E8A /* ShowLocationContainer.swift in Sources */,
 				9CF8D1B02253C403008F88CD /* LoginViewController.swift in Sources */,
 				9CF8D1C52253E899008F88CD /* LoginViewComponents.swift in Sources */,
 				E1939E6E229D5CB900D02E8A /* InvitedGuestsButton.swift in Sources */,
 				9CCF0575229C137C009AF3D7 /* DoneButton.swift in Sources */,
 				9CCF056F2295F840009AF3D7 /* DateInputTextField.swift in Sources */,
-				9C3E45E9229C4A9600D4FE4D /* Time.swift in Sources */,
-				9C3E45E5229C49BE00D4FE4D /* Guest.swift in Sources */,
 				E1939E72229D5D3400D02E8A /* PlaceLabel.swift in Sources */,
 				9CCF05692295F2A6009AF3D7 /* ThrowADinnerLabel.swift in Sources */,
 				9CBC82C22293EB9D00615D6F /* AddEventButton.swift in Sources */,
@@ -403,7 +367,6 @@
 				9CCF05712297E3A8009AF3D7 /* PickLocationContainer.swift in Sources */,
 				9CCF05732298013B009AF3D7 /* PickLocation.swift in Sources */,
 				9CCF05672295EE88009AF3D7 /* NameTextField.swift in Sources */,
-				9C3E45EB229C4AE800D4FE4D /* Event.swift in Sources */,
 				9CF8D1AE2253C403008F88CD /* AppDelegate.swift in Sources */,
 				E1939E70229D5D0D00D02E8A /* PlaceButton.swift in Sources */,
 			);
